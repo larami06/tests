@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testes E2E (Playwright) do SauceDemo - Qualidade e Testes de Software, UVV",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "test:problem": "set SAUCE_USER=problem_user&& playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0"
+  }
+}
